@@ -1,12 +1,15 @@
-// complete the given function
-
 function palindrome(str){
-	str = str.toLowerCase();
-	let n = str.length;
-	for(let i=0; i<n/2; i++){
-		if(str[i]!=str[n-i-1]){
+  var palin = str.toLowerCase();
+	let i=0,j=i-1;
+	while(i<j){
+	// palin = str.charAt[i==j]
+		if(str.charAt(i)==str.charAt(j)){
+			i++;
+			j--;
+		}else {
 			return false;
 		}
+		
 	}
 	return true;
 }
